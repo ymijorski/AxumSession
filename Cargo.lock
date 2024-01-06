@@ -384,7 +384,7 @@ dependencies = [
  "serde",
  "serde_json",
  "sqlx",
- "surrealdb 1.1.0-beta.2",
+ "surrealdb 1.1.0-beta.3",
  "thiserror",
  "tokio",
  "tower",
@@ -811,9 +811,9 @@ checksum = "06ea2b9bc92be3c2baa9334a323ebca2d6f074ff852cd1d7b11064035cd3868f"
 
 [[package]]
 name = "cpufeatures"
-version = "0.2.11"
+version = "0.2.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ce420fe07aecd3e67c5f910618fe65e94158f6dcc0adf44e00d69ce2bdfe0fd0"
+checksum = "53fe5e26ff1b7aef8bca9c6080520cfb8d9333c7568e1829cef191a9723e5504"
 dependencies = [
  "libc",
 ]
@@ -2903,9 +2903,9 @@ dependencies = [
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.75"
+version = "1.0.76"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "907a61bd0f64c2f29cd1cf1dc34d05176426a3f504a78010f08416ddb7b13708"
+checksum = "95fc56cda0b5c3325f5fbbd7ff9fda9e02bb00bb3dac51252d2f1bfa1cb8cc8c"
 dependencies = [
  "unicode-ident",
 ]
@@ -4364,7 +4364,7 @@ dependencies = [
  "tokio",
  "tokio-tungstenite 0.18.0",
  "tracing",
- "trice",
+ "trice 0.3.1",
  "ulid",
  "url",
  "uuid",
@@ -4375,8 +4375,8 @@ dependencies = [
 
 [[package]]
 name = "surrealdb"
-version = "1.1.0-beta.2"
-source = "git+https://github.com/surrealdb/surrealdb.git?tag=v1.1.0-beta.2#ef5703cb484ae2a3594cb43716272d92c62036d9"
+version = "1.1.0-beta.3"
+source = "git+https://github.com/surrealdb/surrealdb.git?tag=v1.1.0-beta.3#6151d2b7a79d0d857e0b70631463d77ab20cba0b"
 dependencies = [
  "addr",
  "any_ascii",
@@ -4436,7 +4436,7 @@ dependencies = [
  "tokio",
  "tokio-tungstenite 0.20.1",
  "tracing",
- "trice",
+ "trice 0.4.0",
  "ulid",
  "url",
  "uuid",
@@ -4845,6 +4845,17 @@ name = "trice"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "61aa4cd1c1dca57255b92cb9e53d5b3ac5a22da6d8a63045337eb3da1a065d43"
+dependencies = [
+ "js-sys",
+ "wasm-bindgen",
+ "web-sys",
+]
+
+[[package]]
+name = "trice"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d3aaab10ae9fac0b10f392752bf56f0fd20845f39037fec931e8537b105b515a"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
